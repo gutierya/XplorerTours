@@ -1,2 +1,9 @@
-# GutieryaExplorerTours
-A travel tour website that uses advanced CSS and SASS concepts
+#Project Title: ExplorerTours
+
+Motivation:  A fun website to use and practice advanced CSS and SASS concepts.
+
+Description: Tour website.
+
+Screenshots:
+
+Features:
