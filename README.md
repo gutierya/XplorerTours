@@ -1,9 +1,5 @@
 #Project Title: ExplorerTours
 
-Motivation:  A fun website to use and practice advanced CSS and SASS concepts.
+Description: Travel and exursion tour site.
 
-Description: Tour website.
 
-Screenshots:
-
-Features:
