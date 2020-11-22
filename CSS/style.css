@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Basic reset hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/******************************************
+/* Branding STYLES for website
+/*******************************************/
+/* Colors 
+base: rgb(173,210,140)
+layer1: rgb(200,202,186)
+layer2: rgb(77,96,96)
+*/
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: rgb(219, 224, 224);
+  font-family: "Dancing Script", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: whitesmoke;
+  /* around entire site */
+  padding: 30px; 
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(173, 210, 140, 0.5), rgb(77,96,96)), url(../IMG/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  -webkit-clip-path: polygon(50% 0%, 100% 70%, 50% 100%, 0% 70%);
+          clip-path: polygon(50% 0%, 100% 70%, 50% 100%, 0% 70%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.logo {
+  height: 150px;
+  -webkit-clip-path: polygon(50% 0%, 100% 70%, 50% 100%, 0% 70%);
+          clip-path: polygon(50% 0%, 100% 70%, 50% 100%, 0% 70%);
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  text-size-adjust: 15px;
+  font-style: italic;
+}
+
+
+.primary-heading {
+  color: whitesmoke;
+  text-transform: uppercase;
+
+  /* Removing animation shake */
+  backface-visibility: hidden;
+}
+.primary-heading-main {
+  display: block;
+  font-size: 70px;
+  font-weight: 10px;
+  letter-spacing: 2px;
+
+  -webkit-animation: heroMain 1s ease-out;
+          animation: heroMain 1s ease-out;
+}
+.primary-heading-sub {
+  display: block;
+  font-size: 14px;
+  font-weight: 10px;
+  letter-spacing: 2px;
+
+  -webkit-animation: heroSub 1s ease-out;
+          animation: heroSub 1s ease-out;
+}
+/******************************************
+/* Animations
+/*******************************************/
+@-webkit-keyframes heroMain{
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes heroMain{
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes heroSub  {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes heroSub  {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  
+}
+.btn-hero {
+  background-color: darkblue;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
